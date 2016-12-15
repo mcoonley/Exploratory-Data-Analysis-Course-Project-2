@@ -20,6 +20,7 @@ SCC <- readRDS("./Source_Classification_Code.rds")
 ## please note, these four levels also comprise the entire Data.Category level of "Onroad" in SCC,
 ## which is also noted on the NEI dataset as the "type" column
 ## entire "type" category of "ON-ROAD" in the NEI dataset.
+## research operations run to verify:
 levels(SCC$EI.Sector)
 onroadmobile<-SCC[SCC$EI.Sector %in% c("Mobile - On-Road Diesel Heavy Duty Vehicles",
                                        "Mobile - On-Road Diesel Light Duty Vehicles",
